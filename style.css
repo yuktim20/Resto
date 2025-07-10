@@ -98,18 +98,31 @@ section .Book{
 .bg2 {
     background-color: #e2e8f0;
 }
-.bg2 .content h1{
+.bg2 .content h2{
     text-align: center;
     padding:10px ;
+    color: #e2e8f0;
+    background-color: #0f172a;
 }
 .dishes .dish1{
     padding: 27px;
+    display: flex;
+    flex-direction: column;
+   
 }
+.dishes .dish1:hover{
+    border-color: #0f172a;
+}
+
 .dishes .dish2{
     padding: 27px;
+    display: flex;
+    flex-direction: column;
 }
 
 .dishes .dish3{
     padding: 27px;
+    display: flex;
+    flex-direction: column;
 }
 
