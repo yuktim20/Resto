@@ -89,20 +89,27 @@ section .Book{
     .bg1 {
       background-image: url('/image2.png');
     }
-
-    .bg2 {
-        height: 450px;
-      background-color: #f8fafc;
-    }
-
     .bg3 {
       background-image: url('/image3.png');
     }
 .content .dishes{
     display: flex;
 }
-.sectionbg2 .
-.sectionbg2 .content h1{
-    text-align: center;
-    margin-bottom:50px ;
+.bg2 {
+    background-color: #e2e8f0;
 }
+.bg2 .content h1{
+    text-align: center;
+    padding:10px ;
+}
+.dishes .dish1{
+    padding: 27px;
+}
+.dishes .dish2{
+    padding: 27px;
+}
+
+.dishes .dish3{
+    padding: 27px;
+}
+
