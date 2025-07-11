@@ -80,11 +80,11 @@ section .Book{
     font-weight: bolder;
     margin-left: 150px;
 }
-.card1, .card2, .card3 {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.694);
+.dish1 , .dish2 , .dish3 ,.card1, .card2, .card3 {
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.694); */
     transition: transform 0.3s ease;
 }
-.card1:hover, .card2:hover, .card3:hover {
+.dish1:hover , .dish2:hover , .dish3:hover ,.card1:hover, .card2:hover, .card3:hover {
     transform: translateY(-5px);
 } 
 
@@ -125,7 +125,9 @@ section .Book{
     text-align: center;
     margin-top: 50px;
 }
-
+.food img{
+  border-radius: 50%;
+}
 .section {
     height: 500px;
     background-size: cover;
@@ -164,22 +166,29 @@ section .Book{
     padding: 10px;
     text-align: center;
     font-family: cursive;
-    border:4px dashed #f1c40f;
+    border:4px solid #f1c40f;
     border-radius: 20px;
     background-color: rgb(255, 255, 255);
 }
 .content h3{
     font-family:'Times New Roman', Times, serif;
-    padding: 10px;
+    padding: 15px;
     font-style: oblique;
-    background-color: white;
+    border-radius: 20px;
+    background-color: #f1c40fb7;
     font-size: 18px;
 }
+
 .dishes .dish1{
     padding: 27px;
     display: flex;
     flex-direction: column;
+    border-radius: 50%;
    
+}
+.dishes img{
+      border-radius: 50%;
+
 }
 .dishes .dish1:hover{
     border-color: #0f172a;
@@ -196,6 +205,7 @@ section .Book{
     display: flex;
     flex-direction: column;
 }
+
 .Testimonial {
   background-color: #0f172a;
   border: 2px solid #f8fafc;
