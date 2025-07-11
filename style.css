@@ -2,6 +2,36 @@
     margin: 0;
     padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+.animated-text {
+  font-size: 2rem;
+  color: #0f172a;
+  animation: slideInOut 2s ease-in-out infinite;
+}
+
+/* Keyframes for in and out animation */
+@keyframes slideInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
 /* --primary: #0f172a (Midnight Navy)
 
 --accent: #22d3ee (Cyan / Aqua)
@@ -15,8 +45,9 @@ section{
     display: flex;
     background-color: #0f172a;
     position:fixed;
-    width: 1200px;
+    width: 1300px;
 }
+
 section .image{
     margin: 10px;
     padding: 5px;
@@ -47,6 +78,20 @@ section .Book{
     background-color: #f8fafc;
     border-radius: 20px;
     font-weight: bolder;
+    margin-left: 150px;
+}
+.card1, .card2, .card3 {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.694);
+    transition: transform 0.3s ease;
+}
+.card1:hover, .card2:hover, .card3:hover {
+    transform: translateY(-5px);
+} 
+
+.content a:hover,
+.footer-section a:hover {
+    color: #22d3ee;
+    transition: 0.3s;
 }
 .food{
     display: flex;
@@ -60,6 +105,9 @@ section .Book{
     flex-direction: column;
     padding: 10px;
     
+}
+.info .p1{
+    font-weight: 700;
 }
 .info h1{
     font-weight: 800;
@@ -92,6 +140,12 @@ section .Book{
     .bg3 {
       background-image: url('/image3.png');
     }
+    .bg4{
+        background-image: url('/inter.png');
+    }
+    .bg5{
+        background-image: url('/inter2.png');
+    }
 .content .dishes{
     display: flex;
 }
@@ -101,8 +155,25 @@ section .Book{
 .bg2 .content h2{
     text-align: center;
     padding:10px ;
-    color: #e2e8f0;
+    color: #f1c40f;
     background-color: #0f172a;
+    font-size: 100px;
+    
+}
+.content h1{
+    padding: 10px;
+    text-align: center;
+    font-family: cursive;
+    border:4px dashed #f1c40f;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+}
+.content h3{
+    font-family:'Times New Roman', Times, serif;
+    padding: 10px;
+    font-style: oblique;
+    background-color: white;
+    font-size: 18px;
 }
 .dishes .dish1{
     padding: 27px;
@@ -125,4 +196,98 @@ section .Book{
     display: flex;
     flex-direction: column;
 }
+.Testimonial {
+  background-color: #0f172a;
+  border: 2px solid #f8fafc;
+  padding: 20px;
+}
+.Testimonial h1{
+    color: #0f172a;
+    text-align: center;
+    font-family:cursive;
+    border: 2px solid #0f172a;
+    background-color: white;
+    border-radius: 200px;
+}  
+.card{
+    display: flex;
+}
+.card1{
+    margin: 20px;
+    border: 2px solid #0f172a;
+    padding: 20px;
+background-color: #f8fafc;
+}
+.card2{
+    margin: 20px;
+    border: 2px solid #0f172a;
+    padding: 20px;
+background-color: #f8fafc;
+}
+.card3{
+    margin: 20px;
+    border: 2px solid #0f172a;
+    padding: 20px;
+    background-color: #f8fafc;
+}
+.content2 img{
+    border: 2px dashed #0f172a;
+    background-color: #f8fafc;
+    width: 250px;
+    /* margin-top: 50px; */
 
+}
+.content2 h5{
+    font-size: 150px;
+    color: white;
+}
+section bg5 .content2 img{
+    margin-top: 290px;
+}
+.footer {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 40px 20px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer h3, .footer h4 {
+  margin-bottom: 15px;
+  color: #f1c40f;
+}
+
+.footer-section p, .footer-section a {
+  color: #ccc;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  margin-top: 30px;
+  padding-top: 20px;
+  font-size: 13px;
+  color: #aaa;
+}
